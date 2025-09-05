@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer</title>
+  <style>
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    #countdown {
+      height: 200px;
+      width: 200px;
+      background-color: rgb(17, 121, 87);
+      color: red;
+      font-size:xx-large;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      border-radius: 5px;
+
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+       background-color: rgb(145, 102, 184);
+       height: 100%;
+    }
+    #inputNumber{
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+    }
+    #startBtn{
+        background-color: rgb(13, 232, 54);
+        height: 40px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 1s ease, color 1s ease;
+    }
+     #startBtn:hover{
+        font-size: large;
+        background-color: rgb(255, 0, 0);
+        transition: background-color 1s ease, color 1s ease;
+     }
+  </style>
+</head>
+<body>
+    <div id="main">
+        <h2>Enter a number to start countdown:</h2>
+        <input type="number" id="inputNumber" placeholder="Enter seconds">
+        <button id="startBtn">Start</button>
+
+        <div id="countdown">0</div>
+    </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
